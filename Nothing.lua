@@ -2167,30 +2167,15 @@ end
     end
 end)
 
--- HIGHLIGHT Heading
-local highlightHeading = Instance.new("TextLabel", visualBox)
-highlightHeading.Name = "HighlightHeading"
-highlightHeading.Size = UDim2.new(1, -20, 0, 40)
-highlightHeading.Position = UDim2.new(0, 10, 0, chamsBox.Position.Y.Offset + chamsBox.Size.Y.Offset + 10) -- below ChamsBox
-highlightHeading.BackgroundTransparency = 1
-highlightHeading.Font = Enum.Font.FredokaOne
-highlightHeading.TextSize = 22
-highlightHeading.TextXAlignment = Enum.TextXAlignment.Left
-highlightHeading.TextColor3 = Color3.fromRGB(20, 80, 200)
-highlightHeading.TextStrokeTransparency = 0.4
-highlightHeading.Text = "HIGHLIGHT"
-
--- Underline
-local underlineHighlight = Instance.new("Frame", highlightHeading)
-underlineHighlight.Size = UDim2.new(0.25, 0, 0, 2)
-underlineHighlight.Position = UDim2.new(0, 0, 1, -3)
-underlineHighlight.BackgroundColor3 = Color3.fromRGB(20, 80, 200)
-underlineHighlight.BorderSizePixel = 0
-
--- Glow effect
-local glowHighlight = Instance.new("UIStroke", underlineHighlight)
-glowHighlight.Thickness = 4
-glowHighlight.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-glowHighlight.Color = Color3.fromRGB(0, 0, 150)
-glowHighlight.Transparency = 0.2
-
+-- "More Visuals Coming Soon" Text (inside Visual tab)
+local comingSoonText = Instance.new("TextLabel", visualBox)
+comingSoonText.Name = "ComingSoonText"
+comingSoonText.Size = UDim2.new(1, -20, 0, 30) -- width fills box, height 30
+comingSoonText.Position = UDim2.new(0, 10, 0, 450) -- adjust Y offset to be way below ESP heading
+comingSoonText.BackgroundTransparency = 1
+comingSoonText.Font = Enum.Font.FredokaOne
+comingSoonText.TextSize = 18
+comingSoonText.TextXAlignment = Enum.TextXAlignment.Left
+comingSoonText.TextColor3 = Color3.fromRGB(180, 180, 180) -- grayish color
+comingSoonText.Text = "MORE VISUALS COMING SOON NEXT UPDATE"
+comingSoonText.TextStrokeTransparency = 0.5
